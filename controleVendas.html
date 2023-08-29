@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedido de Venda</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">Vendas</a>
+				<ul class="submenu">
+					<li><a href="#">Pedido de Venda</a></li>
+					<li><a href="#">Histórico</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Produtos</a>
+				<ul class="submenu">
+					<li><a href="#">Listagem</a></li>
+					<li><a href="#">Cadastro</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Clientes</a>
+				<ul class="submenu">
+					<li><a href="meuspedidos.html">Listagem</a></li>
+					<li><a href="#">Cadastro</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+
+	<div class="formulario">
+		<h1>Pedido de Venda</h1>
+		<form>
+			<label for="cliente">Cliente:</label>
+			<input type="text" id="cliente" name="cliente" required>
+
+			<label for="produto">Produto:</label>
+			<input type="text" id="produto" name="produto" required>
+
+			<label for="quantidade">Quantidade:</label>
+			<input type="number" id="quantidade" name="quantidade" required>
+
+			<button type="submit">Enviar</button>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

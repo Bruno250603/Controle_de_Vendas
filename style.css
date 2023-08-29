@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #1b4f72;
+}
+
+.menu {
+	list-style-type: none;
+	padding-top: 20px;
+}
+
+.menu li {
+	position: relative;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 200px;
+	width: 200px;
+	background-color: #2980b9;
+}
+
+.menu li:hover .submenu {
+	display: block;
+}
+
+.submenu li {
+	position: relative;
+}
+
+.submenu li a {
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.formulario {
+	margin-left: 220px;
+	padding: 20px;
+}
+
+.formulario h1 {
+	margin-bottom: 20px;
+}

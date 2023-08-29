@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">Vendas</a>
+				<ul class="submenu">
+					<li><a href="pedido.html">Pedido de Venda</a></li>
+					<li><a href="statusPedido.html">Histórico</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Produtos</a>
+				<ul class="submenu">
+					<li><a href="#">Listagem</a></li>
+					<li><a href="#">Cadastro</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Clientes</a>
+				<ul class="submenu">
+					<li><a href="meuspedidos.html">Listagem</a></li>
+					<li><a href="login.html">Cadastro</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+
+	<div class="formulario">
+		<h1>Login</h1>
+		<form>
+			<label for="cliente">Usuário:</label>
+			<input type="text" id="usuario" name="usuario" required>
+			<br>
+			<label for="produto">Senha:</label>
+			<input type="text" id="senha" name="senha" required>
+			<br>
+			<button type="submit">Acessar</button>
+			<button type="submit">Esqueci minha senha</button>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
