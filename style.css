@@ -14,7 +14,7 @@ nav {
 	height: 100%;
 	background: linear-gradient(to right, #1A1A1B, #001469);
 	background-color: #1b4f72;
-	box-shadow: 0.4em 0.4em 1em 0.4em gray;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .menu {
@@ -73,9 +73,23 @@ img {
 	left: 60px;
 }
 
-.formulario {
-	margin-left: 220px;
+.pedido {
+	margin-right: 5px;
+	margin-left: 210px;
 	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 5px;
+}
+
+.formulario {
+	margin-right: 5px;
+	margin-left: 210px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 5px;
+
 }
 
 .formulario h1 {
