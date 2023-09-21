@@ -1,0 +1,244 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background: linear-gradient(to right, #1A1A1B, #001469);
+	background-color: #1b4f72;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.menu {
+	list-style-type: none;
+	padding-top: 70%;
+	text-align: left;
+	font-size: larger;
+	line-height: 30px;
+}
+
+img {
+	position: relative;
+	top: 10px;
+	border-radius: 10px;
+	margin-left: 10px;
+	left: 0px;
+	width: 90%;
+	height: 160px;
+	background: linear-gradient(to right, #1A1A1B, #001469);
+	background-color: #001469;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 10px linear-gradient(to right, #2b2a2a, #303b6b);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 10px;
+	color:#a8a8a8;
+	text-shadow:1px 1px 0px #001469;
+	text-align: justify;
+}
+.menu li {
+	position: relative;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu {
+	display: block;
+}
+
+.login {
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+	list-style-type: none;
+	position: fixed;
+	top: 92%;
+	left: 60px;
+}
+
+.pedido {
+	margin-right: 5px;
+	margin-left: 210px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 5px;
+}
+
+.formulario {
+	margin-right: 5px;
+	margin-left: 210px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 5px;
+	position: relative;
+}
+
+.tabela {
+	margin-right: 5px;
+	margin-left: 210px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 5px;
+	text-align: center;
+	position: relative;
+}
+
+.formulario h1 {
+	margin-bottom: 20px;
+} 
+  /******
+   Styles
+  *******/
+body {
+
+    color: #333;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+table {
+
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table thead th {
+
+    padding: 10px;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+}
+
+table tbody tr td {
+
+    display: table-cell;
+    font-weight: 400;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+table tbody tr {
+
+    border: none;
+    display: table-row;
+}
+
+table tbody tr:nth-child(odd) {
+
+    background: #f2f2f2;
+}
+
+table tbody tr td button {
+
+    display: inline-block;
+    padding: 10px 15px;
+    position: initial;
+    transform: translate(0);
+    width: auto;
+}
+
+table tbody tr td button {
+
+    background: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
+    color: #fff;
+    font-weight: 700;;
+    padding: 10px 0;
+    width: 100%;
+}
+
+table tbody tr td button VERMELHO {
+
+    background: #af4c4c;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
+    color: #fff;
+    font-weight: 700;;
+    padding: 10px 0;
+    width: 100%;
+}
+
+table thead {
+
+    display: table-header-group;
+    font-weight: 500;
+}
+
+
+table tbody tr td:before {
+
+    display: none;
+}
+
+table tbody tr td button:hover, table tbody tr td button:focus {
+
+    background: #a795fe;
+    cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+
+    table tbody tr td {
+
+        display: block;
+        text-align: right;
+    }
+
+    table tbody tr td:before {
+
+        content: attr(data-title);
+        position: absolute;
+        left: 15px;
+        display: block;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    table {
+
+        border: none;
+    }
+
+    table thead {
+
+        display: none;
+    }
+
+    table tbody tr {
+
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #dad6eb;
+    }
+
+
+}
