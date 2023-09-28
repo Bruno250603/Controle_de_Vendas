@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold
 
 }
 
@@ -165,7 +166,7 @@ table tbody tr td button {
 
 table tbody tr td button {
 
-    background: #4CAF50;
+    background: #0558EE;
     border: none;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
@@ -175,17 +176,6 @@ table tbody tr td button {
     width: 100%;
 }
 
-table tbody tr td button VERMELHO {
-
-    background: #af4c4c;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
-    color: #fff;
-    font-weight: 700;;
-    padding: 10px 0;
-    width: 100%;
-}
 
 table thead {
 
@@ -201,7 +191,7 @@ table tbody tr td:before {
 
 table tbody tr td button:hover, table tbody tr td button:focus {
 
-    background: #a795fe;
+    background: linear-gradient(to right, #1A1A1B, #001469);
     cursor: pointer;
 }
 
