@@ -1,0 +1,166 @@
+<style>
+    table {
+        border-collapse: collapse;
+        margin-left: 0;
+    }
+    div.conteudodatabela {
+        overflow: visible;
+    }
+    table > tbody {
+        overflow: visible;
+    }
+    /*adds control for test purposes*/
+    thead td {
+        font-size: 11pt;
+    }
+    tfoot td {
+        text-align: center;
+        font-size: 9pt;
+    }
+    thead {
+        display: table-header-group;
+        margin-bottom: 10px
+    }
+    tfoot {
+        display: table-footer-group;
+    }
+    thead th, thead td {
+        position: static;
+    }
+    thead tr {
+        position: static;
+    }
+    /*prevent problem if print after scrolling table*/
+    table tfoot tr {
+        position: static;
+    }
+    /* table */
+    .checkbox {
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        text-align: center;
+        float: left;
+        margin-right: 10px;
+        font-size: 150%;
+    }
+    .foo { writing-mode: vertical-lr; }
+    .border {
+         border: 1px solid black;
+    }
+    table{
+        font-weight: 800;
+        font-size: 80%;
+        width: 100%;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+    .bg{
+        background: rgb(230,230,230);
+    }
+    .h1{
+        font-size: 120%;
+    }
+    .center{
+      text-align: center;
+    }
+    .semi-full-width{
+        width: 80%;
+    }
+    .row{
+        margin: 50px;
+    }
+    .p-1{
+        margin: 30px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding: 8px;
+    }
+    .textovertical{
+      writing-mode: horizontal-tb;  
+      width:11px;
+      word-wrap: break-word;
+      font-family: Arial, Helvetica, sans-serif; 
+      white-space: pre-wrap;
+    }
+    tr{
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+    .m-r{
+        margin-right: 830px;
+    }
+    .padding_master {
+        padding: 30px;
+    }
+    .conteiner{
+        font-size: 90%;
+    }
+    .table td{
+        border: 1px solid black;
+        padding: 1px;
+        margin: 0px;
+    }
+    .lineBottom-inLine{
+        /* <p> */
+        border-bottom: 1px solid black;
+        display: inline;
+    }
+    .lineBottom{
+        /* <p> */
+        border-bottom: 1px solid black;
+    }
+    .no-border{
+        border: 0px;
+    }    
+    .no-space{
+        margin: 1px;
+        padding: 1px;
+    }
+    .no-bold{
+        font-weight: 500;
+    }
+    .space-p p{
+        margin: 1px; padding: 1px;
+    }
+    .tr-center td{
+        text-align: center;
+    }
+    .regras p{
+        margin: 0px;
+    }
+</style>
+<style type="text/css" media="print">
+    @page { size: auto;  margin: 0mm; }
+</style>
+<li>
+    <a href="index.html">Home</a>
+</li>
+<div class="table" runat="server" style="margin: 1 auto;">
+    <div>
+        <table style="padding: 0px; margin: 0px;" class="no-bold">
+            <tr class="center">
+                <td class="textovertical">Contratação</td>
+                <td colspan="2">Origem Dívida</td>
+                <td>Credor</td>
+                <td colspan="2">Devedor</td>
+                <td>Credor</td>
+            </tr>
+            <tr class="tr-center">
+                <td class="textovertical" id="border" rowspan="4" style="width:43px">Direta</td>
+                <td class="textovertical" id="border" colspan="" rowspan="1">Interna</td>
+                <td id="border" colspan="2" rowspan="">teste25</td>
+                <td id="border" colspan="2" rowspan="">teste12</td>
+                <td>teste 1</td>
+            </tr>
+            <tr class="tr-center">
+                <td id="border" rowspan="1">Externa</td>
+                 <td id="border" colspan="2" rowspan="3"> teste20</td>
+                 <td id="border" colspan="2" rowspan="">teste40</td>
+                 <td>teste 1</td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <br/>
+</div>
