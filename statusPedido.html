@@ -22,6 +22,9 @@
 			<li>
 				<a href="statusPedido.html">Status do Pedido</a>
 			</li>
+			<li>
+				<a href="relatorio.html">Relatório</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -33,34 +36,48 @@
 			<button type="submit">Pesquisar</button>
 			<br>
 			<br>
-			<label for="Nome">Nome:</label>
-			<input type="text" id="Nome" name="Nome" required>
-			<br>
-			<br>
-			<label for="Produto">Produto:</label>
-			<input type="text" id="produto" name="produto" required>
-			<br>
-			<br>
-			<label for="Data">Data do Pedido:</label>
-			<input type="date" id="Data" name="Data" required>
-			<br>
-			<br>
-			<label for="Prazo">Prazo de Entrega:</label>
-			<input type="date" id="Prazo" name="Prazo" required>
-			<br>
-			<br>
-			<label for="Status">Status do Pedido:</label>
-			<br>
-			<input type="radio" id="Status" name="Status" required>
-			<label for="Status">Em análise</label>
-			<br>
-			<input type="radio" id="Status" name="Status" required>
-			<label for="Status">Aprovado</label>
-			<br>
-			<input type="radio" id="Status" name="Status" required>
-			<label for="Status">Reprovado</label>
 		</form>
 	</div>
+	<div class="tabela">
+		<link rel="stylesheet" href="StyleTabela.css">
+		<table>
+			<thead>
+				<tr>
+					<th>Cliente</th>
+					<th>Produto</th>
+					<th>Quantidade</th>
+					<th>Valor Total</th>
+					<th>Data de Compra</th>
+					<th>Prazo</th>
+					<th>Situação do Pedido</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-title="Clientes">Bruno Benedetti</td>
+					<td data-title="Produto">744107</td>
+					<td data-title="Quantidade">10</td>
+					<td data-title="Valor Total">R$6.000,00</td>
+					<td data-title="Data de Compra">30/09/2023</td>
+					<td data-title="Prazo">05/07/2023</td>
+					<td>
+						<button>Pagar</button>
+					</td>
+				</tr>
+				<tr>
+					<td data-title="Clientes">Bruno Benedetti</td>
+					<td data-title="Produto">744107</td>
+					<td data-title="Quantidade">10</td>
+					<td data-title="Valor Total">R$6.000,00</td>
+					<td data-title="Data de Compra">15/08/2023</td>
+					<td data-title="Prazo">05/07/2023</td>
+					<td>
+						<button>Aprovado</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+</div>
 
 	<script src="script.js"></script>
 </body>

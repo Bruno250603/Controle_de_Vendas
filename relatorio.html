@@ -1,166 +1,103 @@
-<style>
-    table {
-        border-collapse: collapse;
-        margin-left: 0;
-    }
-    div.conteudodatabela {
-        overflow: visible;
-    }
-    table > tbody {
-        overflow: visible;
-    }
-    /*adds control for test purposes*/
-    thead td {
-        font-size: 11pt;
-    }
-    tfoot td {
-        text-align: center;
-        font-size: 9pt;
-    }
-    thead {
-        display: table-header-group;
-        margin-bottom: 10px
-    }
-    tfoot {
-        display: table-footer-group;
-    }
-    thead th, thead td {
-        position: static;
-    }
-    thead tr {
-        position: static;
-    }
-    /*prevent problem if print after scrolling table*/
-    table tfoot tr {
-        position: static;
-    }
-    /* table */
-    .checkbox {
-        width: 20px;
-        height: 20px;
-        border: 1px solid black;
-        text-align: center;
-        float: left;
-        margin-right: 10px;
-        font-size: 150%;
-    }
-    .foo { writing-mode: vertical-lr; }
-    .border {
-         border: 1px solid black;
-    }
-    table{
-        font-weight: 800;
-        font-size: 80%;
-        width: 100%;
-        margin: 10px;
-        margin-bottom: 20px;
-    }
-    .bg{
-        background: rgb(230,230,230);
-    }
-    .h1{
-        font-size: 120%;
-    }
-    .center{
-      text-align: center;
-    }
-    .semi-full-width{
-        width: 80%;
-    }
-    .row{
-        margin: 50px;
-    }
-    .p-1{
-        margin: 30px;
-        margin-bottom: 40px;
-        margin-top: 40px;
-        padding: 8px;
-    }
-    .textovertical{
-      writing-mode: horizontal-tb;  
-      width:11px;
-      word-wrap: break-word;
-      font-family: Arial, Helvetica, sans-serif; 
-      white-space: pre-wrap;
-    }
-    tr{
-        margin: 10px;
-        margin-bottom: 50px;
-    }
-    .m-r{
-        margin-right: 830px;
-    }
-    .padding_master {
-        padding: 30px;
-    }
-    .conteiner{
-        font-size: 90%;
-    }
-    .table td{
-        border: 1px solid black;
-        padding: 1px;
-        margin: 0px;
-    }
-    .lineBottom-inLine{
-        /* <p> */
-        border-bottom: 1px solid black;
-        display: inline;
-    }
-    .lineBottom{
-        /* <p> */
-        border-bottom: 1px solid black;
-    }
-    .no-border{
-        border: 0px;
-    }    
-    .no-space{
-        margin: 1px;
-        padding: 1px;
-    }
-    .no-bold{
-        font-weight: 500;
-    }
-    .space-p p{
-        margin: 1px; padding: 1px;
-    }
-    .tr-center td{
-        text-align: center;
-    }
-    .regras p{
-        margin: 0px;
-    }
-</style>
-<style type="text/css" media="print">
-    @page { size: auto;  margin: 0mm; }
-</style>
-<li>
-    <a href="index.html">Home</a>
-</li>
-<div class="table" runat="server" style="margin: 1 auto;">
-    <div>
-        <table style="padding: 0px; margin: 0px;" class="no-bold">
-            <tr class="center">
-                <td class="textovertical">Contratação</td>
-                <td colspan="2">Origem Dívida</td>
-                <td>Credor</td>
-                <td colspan="2">Devedor</td>
-                <td>Credor</td>
-            </tr>
-            <tr class="tr-center">
-                <td class="textovertical" id="border" rowspan="4" style="width:43px">Direta</td>
-                <td class="textovertical" id="border" colspan="" rowspan="1">Interna</td>
-                <td id="border" colspan="2" rowspan="">teste25</td>
-                <td id="border" colspan="2" rowspan="">teste12</td>
-                <td>teste 1</td>
-            </tr>
-            <tr class="tr-center">
-                <td id="border" rowspan="1">Externa</td>
-                 <td id="border" colspan="2" rowspan="3"> teste20</td>
-                 <td id="border" colspan="2" rowspan="">teste40</td>
-                 <td>teste 1</td>
-            </tr>
-        </table>
-    </div>
-    <br/>
-    <br/>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Análise de Pedidos</title>
+	<link rel="stylesheet" href="StyleTabela.css">
+</head>
+<body>
+	<nav>
+		<div>
+			<img src="NovaLogo.png" />
+		</div>
+		<ul class="menu">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="pedido.html">Pedidos</a>
+			</li>
+			<li>
+				<a href="analisePedido.html">Funcionários</a>
+			</li>
+			<li>
+				<a href="statusPedido.html">Status do Pedido</a>
+			</li>
+            <li>
+				<a href="relatorio.html">Relatório</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="formulario">
+		<h1>Relatório</h1>
+	</div>	
+		<div class="tabela">
+			<table>
+				<thead>
+					<tr>
+						<th>Cliente</th>
+						<th>Produto</th>
+						<th >Quantidade</th>
+						<th>Valor Total</th>
+						<th>Prazo</th>
+						<th style="text-align: center;">Situação</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-title="Clientes">Bruno Benedetti</td>
+						<td data-title="Produto">744107</td>
+						<td data-title="Quantidade">5</td>
+						<td data-title="Valor Total">R$5.000,00</td>
+						<td data-title="Prazo">25/09/2023</td>
+						<td>
+							<button>Pagamento</button>
+						</td>
+					</tr>
+					<tr>
+						<td data-title="Clientes">Daniel Cavalcanti</td>
+						<td data-title="Produto">744107</td>
+						<td data-title="Quantidade">6</td>
+						<td data-title="Valor Total">R$6.000,00</td>
+						<td data-title="Prazo">25/09/2023</td>
+						<td>
+							<button>Entregue</button>
+						</td>
+					</tr>
+					<tr>
+						<td data-title="Clientes">Douglas Piazentini</td>
+						<td data-title="Produto">744107</td>
+						<td data-title="Quantidade">8</td>
+						<td data-title="Valor Total">R$8.000,00</td>
+						<td data-title="Prazo">25/09/2023</td>
+						<td>
+							<button>Em Análise</button>
+						</td>
+					</tr>
+					<tr>
+						<td data-title="Clientes">Marcelo Primo</td>
+						<td data-title="Produto">744107</td>
+						<td data-title="Quantidade">3</td>
+						<td data-title="Valor Total">R$3.000,00</td>
+						<td data-title="Prazo">25/09/2023</td>
+						<td>
+							<button>Cancelado</button>
+                        </td>
+					</tr>
+					<tr>
+						<td data-title="Clientes">Pedro Recidivi</td>
+						<td data-title="Produto">744107</td>
+						<td data-title="Quantidade">1</td>
+						<td data-title="Valor Total">R$1.000,00</td>
+						<td data-title="Prazo">25/09/2023</td>
+						<td>
+							<button>Aprovado</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
