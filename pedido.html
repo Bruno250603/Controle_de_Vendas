@@ -17,7 +17,7 @@
 				<a href="pedido.html">Pedidos</a>
 			</li>
 			<li>
-				<a href="analisePedido.html">Funcionários</a>
+				<a href="analisePedido.html">Análise de Pedidos</a>
 			</li>
 			<li>
 				<a href="statusPedido.html">Status do Pedido</a>
@@ -34,7 +34,7 @@
 
 	<div class="formulario">
 		<form>
-			<label for="Nome">Informações para Cadastro</label>
+			<label for="Nome">Cadastro</label>
 			<br>
 			<br>
 			<input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
@@ -42,25 +42,36 @@
 			<input type="number" id="CPF" placeholder="CPF" name="CPF" required>
 			<label for="Endereço"></label>
 			<input type="text" id="endereço" placeholder="Endereço" name="endereço" required>
+			<br>
+			<br>
 			<input type="number" id="telefone" placeholder="Telefone" name="telefone" required>
 			<br>
 			<br>
+	</div>
+	<div class="formulario">
 			<label for="Produtos">Pedido</label>
 			<br>
 			<br>
-			<input type="text" id="produtos" placeholder="Nossos Produtos" name="produtos" required>
+			<select id=cbPais>
+				<option>Produtos</option>
+				<option>Vidro Laminado</option>
+				<option>Vidro simples</option>
+				<option>Vidro fumê</option>
+			</select>
+			<input style="width: 100px;" type="number" id="Quantidade" placeholder="Quantidade" name="Quantidade" required>
 			<br>
 			<label for="Comentario"></label>
 			<br>
 			<textarea type="text" id="comentario" placeholder="Observação" name="comentario"></textarea>
 			<br>
 			<br>
-			<label for="LGPD">Termo LGPD:</label>
-			<input type="checkbox" id="lgpd" name="lgpd" required>
+			<button>
+				<a style="color: #fff; text-decoration: none;" href="https://www.ufmg.br/prorh/wp-content/uploads/2023/05/Termo-de-Consentimento-para-Tratamento-de-Dados-Pessoais-Lei-Geral-de-Protecao-de-Dados-Pessoais-LGPD.pdf" target="_blank">Termo LGPD</a>
+			</button>
+			
 			<br>
 			<br>
-			<button type="submit">Enviar</button>
-			<button type="submit">Doação</button>
+			<button type="submit">Enviar Pedido</button>
 		</form>
 	</div>
 

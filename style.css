@@ -18,6 +18,11 @@ button {
     width: 7%;
 }
 
+.menu:hover, .menu:focus {
+	background: linear-gradient(to right, #1A1A1B, #001469);
+    cursor: pointer;
+}
+
 button:hover, table tbody tr td button:focus {
 
     background: linear-gradient(to right, #1A1A1B, #001469);
@@ -74,6 +79,10 @@ img {
 	padding: 10px 15px;
 	color: #fff;
 	text-decoration: none;
+}
+
+.menu li a:hover, .menu li a:focus {
+	color: #0558EE;
 }
 
 .menu li:hover .submenu {

@@ -232,3 +232,55 @@ table tbody tr td button:hover, table tbody tr td button:focus {
 
 
 }
+button {
+
+    display: inline-block;
+    padding: 10px 15px;
+    position: initial;
+    transform: translate(0);
+    width: auto;
+}
+
+#nome {
+	height: 30px;
+	width: 20%;
+}
+#situação {
+	height: 30px;
+	width: 20%;
+}
+#produto {
+	height: 30px;
+	width: 20%;
+}
+
+button {
+
+    background: #0558EE;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
+    color: #fff;
+    font-weight: 700;;
+    padding: 10px 0;
+    width: 10%;
+}
+
+
+table thead {
+
+    display: table-header-group;
+    font-weight: 500;
+}
+
+
+table tbody tr td:before {
+
+    display: none;
+}
+
+button:hover, button:focus {
+
+    background: linear-gradient(to right, #1A1A1B, #001469);
+    cursor: pointer;
+}

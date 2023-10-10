@@ -1,66 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="login">
 
-    <head>
+        <form class="card" method="POST" action="login.php">
 
-        <meta charset="UTF-8">
+            <div class="card-header">
+                <h2><a href="index.html">HOME</a></h2>
+                <h2>Login</h2>
+            
+            </div>
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <div class="card-content">
+                <div class="card-content-area">
 
-        <meta name="viewport"content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="styleLogin.css">
-
-        <title>Login</title>
-
-    </head>
-
-    <body>
-		
-		<div id="login">
-
-            <form class="card">
-
-                <div class="card-header">
-
-                    <h2><a href="index.html">HOME</a></h2>
-					<h2>Login</h2>
+                    <input type="text" placeholder="Usuario" id="usuario" >
 
                 </div>
 
-                <div class="card-content">
+                <div class="card-content-area">
 
-                    <div class="card-content-area">
-
-                        <label for="usuario">Usuário</label>
-
-                        <input type="text" id="usuario" autocomplete="off">
-
-                    </div>
-
-                    <div class="card-content-area">
-
-                        <label for="password">Senha</label>
-
-                        <input type="password" id="password" autocomplete="off">
-
-                    </div>
-
+                    <input type="password" placeholder="Senha" id="password" >
                 </div>
 
-                <div class="card-footer">
 
-                    <input type="submit" value="login" class="submit">
+            </div>
 
-                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+            <div class="card-footer">
+                <input type="submit" value="login" class="submit">
 
-                </div>
+                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
 
-            </form>
+            </div>
 
-        </div>
 
-    </body>
 
+      
+                
+
+        </form>
+
+    </div>
+
+
+
+</body>
 </html>
