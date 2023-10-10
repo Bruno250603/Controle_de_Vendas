@@ -9,6 +9,17 @@ body {
 
 }
 
+.menu li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li a:hover, .menu li a:focus {
+	color: #0558EE;
+}
+
 #login {
 
     display: flex;
