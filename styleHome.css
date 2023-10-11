@@ -36,7 +36,7 @@ nav {
 	height: 100%;
 	background: linear-gradient(to right, #1A1A1B, #001469);
 	background-color: #1b4f72;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	
 }
 
 .menu {
@@ -47,7 +47,7 @@ nav {
 	line-height: 30px;
 }
 
-img {
+#logomen {
 	position: relative;
 	top: 10px;
 	border-radius: 10px;
@@ -98,7 +98,13 @@ img {
 	left: 60px;
 }
 
+#toplogo{
+	background-color: #00136900;
+	color: #fff;
+}
+
 .pedido {
+	width: 400px;
 	margin-right: 5px;
 	margin-left: 210px;
 	padding: 20px;
@@ -107,14 +113,122 @@ img {
 	margin-top: 5px;
 }
 
-.formulario {
+.quemsomos {
+	width: 700px;
+	margin-right: 0px;
+	margin-left: 210px;
+	padding: 20px;
+	background-color: #ffffff21;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 5px;
+	display: inline-block;
+	color: #fff;
+	border: none;
+    border-radius: 20px;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.objetivo{
+	width: 700px;
+	margin-right: 5px;
+	margin-left: 1150px;
+	padding: 20px;
+	margin-top: 10px;
+	display: inline-block;
+	background-color: #ffffff21;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	color: #fff;
+	border: none;
+    border-radius: 20px;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.sobrenós{
+	width: 700px;
+	margin-right: 5px;
+	margin-left: 210px;
+	padding: 20px;
+	color: #fff;
+	background-color: #ffffff00;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.nossoObj{
+	width: 700px;
+	margin-right: 5px;
+	margin-left: 1150px;
+	padding: 20px;
+	color: #fff;
+	background-color: #ffffff00;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.logo {
+	width: 1600px;
 	margin-right: 5px;
 	margin-left: 210px;
 	padding: 20px;
 	background-color: #ffffff;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	margin-top: 5px;
+	text-align: center;
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 5px;
+    word-spacing: 300px;
+	margin-left: 5px;
+	text-align: center;
+}
+
+#whats{
+	width: 20px;
+	height: 20px;
+	background-color: #001469;
+}
+
+.ong{
+	width: 1700px;
+	margin-right: 5px;
+	margin-left: 210px;
+	padding: 20px;
+	margin-top: 105px;
+	background-color: #ffffff31;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	color: #fff;
+	border: none;
+    border-radius: 20px;
+	letter-spacing: 1px;
+}
+
+.footer {
+	margin-right: 0px;
+	margin-left: 200px;
+	padding: 20px;
+	background-color: #ffffff91;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background:#001469;
+	color: #fff;
+	margin-top: 54px;
+	height: 80px;
+	text-align: center;
+}
+
+
+.formulario {
+	margin-right: 5px;
+	margin-left: 210px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: rgba(128, 88, 88, 0.35) 0px 5px 15px;
+	margin-top: 5px;
 	position: relative;
+	width: 600px;
 }
 
 .loguinho {

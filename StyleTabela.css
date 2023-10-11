@@ -93,6 +93,11 @@ img {
 	margin-top: 5px;
 }
 
+#drop {
+    width: 120px;
+    height: 40px;
+}
+
 .formulario {
 	margin-right: 5px;
 	margin-left: 210px;
@@ -252,17 +257,17 @@ button {
     width: auto;
 }
 
-#nome {
+#CPF {
 	height: 30px;
-	width: 20%;
+	width: 10%;
 }
 #situação {
 	height: 30px;
-	width: 20%;
+	width: 10%;
 }
 #produto {
 	height: 30px;
-	width: 20%;
+	width: 10%;
 }
 
 button {
